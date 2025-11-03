@@ -63,6 +63,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(projects.sharedLogic)
+
+            implementation(compose.uiTooling)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
