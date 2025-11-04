@@ -52,6 +52,9 @@ kotlin {
     sourceSets {
         androidMain.dependencies {
             implementation(compose.preview)
+
+            // TODO would be nice to have debugImplementation for this
+            implementation(compose.uiTooling)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -63,8 +66,6 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(projects.sharedLogic)
-
-            implementation(compose.uiTooling)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
